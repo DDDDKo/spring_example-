@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
+import org.springframework.stereotype.Component;
 
 import com.taewook.basic.entity.CustomOAuth2User;
 
@@ -12,6 +13,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 
+@Component
 // OAuth2에 대한 모든 처리과정이 성공적으로 끝이 났을 때 수행하는 메서드를 생성하기 위한 클래스
 // - 반드시 SimpleUrlAuthenticationSuccessHandler 클래스를 확장 해야함
 @RequiredArgsConstructor
